@@ -1,0 +1,347 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #455559;
+}
+
+header {
+  display: flex;
+  background-color: #455559;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.logo {
+  margin-top: 20px;
+  height: 150px;
+}
+
+.homediv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0px 80px 80px 80px;
+  background-color: #455559;
+}
+
+.imagecard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.673);
+  border: 2px #3d5a73;
+  border-radius: 5px;
+}
+
+.carddiv {
+  padding: 100px;
+  border: 1px #455559;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.cardlink {
+  color: rgb(255, 255, 255);
+}
+
+.cardlink:hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.461);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.logouttxt {
+  font-size: 30px;
+  text-align: center;
+  background-color: #455559;
+}
+
+.logouttxt a {
+  color: #253235;
+  text-decoration: none;
+}
+
+.logouttxt a:hover {
+  color: white;
+}
+
+#albumid {
+  background-image: url(../img/src/albumimg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#albumid:hover {
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+#songid {
+  background-image: url(../img/src/songimg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#loginid {
+  background-image: url(../img/src/loginimg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#insertid {
+  background-image: url(../img/src/insertimg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.containerDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  background-color: red;
+  align-items: center;
+  height: auto;
+  background-color: #455559;
+  padding: 100px;
+}
+
+form {
+  padding: 70px;
+  width: 650px;
+  height: 500px;
+  border-radius: 5px;
+  background-color: #2f3d40;
+  color: rgb(187, 187, 187);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.673);
+}
+
+.form-label {
+  font-size: 20px;
+}
+
+.form-control {
+  background-color: #253235;
+  padding: 22px;
+  border-color: #32535c;
+}
+
+.form-control::placeholder {
+  color: rgba(216, 216, 216, 0.289);
+}
+
+.form-control:hover {
+  background-color: #253235;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.form-ico{
+  height: 20px;
+  width: 20px;
+  margin: 5px;
+}
+
+.custom-file-upload {
+  background-color: #253235;
+  padding: 22px;
+  border-radius: 5px;
+  border-color: #32535c;
+  cursor: pointer;
+}
+
+.custom-file-upload:hover {
+  background-color: #ffffff;
+  color: #2f3d40;
+}
+
+.h2Form {
+  padding-bottom: 20px;
+}
+
+.btn {
+  background-color: #3d5a73;
+  color: rgb(216, 216, 216);
+  font-size: 20px;
+  padding: 5px 30px 5px 30px;
+  margin: 10px;
+}
+
+.aLogin {
+  color: rgb(216, 216, 216);
+}
+
+.aLogin:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.table {
+  width: 700px;
+  border: #3d5a73 2px solid;
+  color: black;
+  background-color: #32535c;
+  margin-bottom: 300px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.673);
+}
+
+#album-table{
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.table tr {
+  border: solid 2px black;
+}
+
+.containerH2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #455559;
+  padding-top: 20px;
+}
+
+.h2AllSongs {
+  color: #262f31;
+  font-size: 50px;
+}
+
+.songsByAlbum-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  background-color: #455559;
+  height: auto;
+}
+
+.album-card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 20px;
+}
+
+.albumCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: cover;
+  width: cover;
+  background-color: #253235;
+  color: white;
+  padding: 30px;
+  margin-top: 50px;
+  height: fit-content;
+  border-radius: 5px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.673);
+}
+
+.album-card-img-top{
+  height: 300px;
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.673);
+  margin: 20px;
+}
+
+.card{
+  height: 600px;
+  width: 350px;
+  background-color: #253235;
+  color: white;
+}
+
+.card-img-top{
+  height: 450px;
+}
+
+.list-group-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #32535c;
+}
+
+.error-container{
+  display: flex;
+  background-color: #455559;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100vh;
+}
+
+.error-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.error-img{
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.673);
+  border-radius: 100%;
+  height: 20em;
+  width: 20em;
+  margin: 10px;
+}
+
+.card-group{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+
+}
+
+.card-img-top{
+  height: auto;
+}
+
+#album-card{
+  margin: 50px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.673);
+  border-radius: 5px;
+}
+
+.cardAlbumTitle{
+  color: white;
+}
+
+.cardAlbumTitle:hover{
+  color: rgb(115, 115, 115);
+  text-decoration: none;
+}

@@ -49,31 +49,37 @@ class model
 
     private function createTables()
     {
+        $password = "admin";
+        $password_hashed = password_hash($password, PASSWORD_DEFAULT);
         // En la variable sql se coloca el su codigo de creacion de tablas
         $sql = "CREATE TABLE IF NOT EXISTS `cancion` (
+
                 `id` int(11) NOT NULL AUTO_INCREMENT,
                 `nombre` varchar(100) NOT NULL,
-                `artistta` varchar(250) NOT NULL,
+                `artista` varchar(250) NOT NULL,
                 `id_album` int(11) NOT NULL,
-                `finalizada` tinyint(1) NOT NULL,
-                PRIMARY KEY (`id`),
-                FOREIGN KEY (`id_album`) REFERENCES album(`id_album`)
+                PRIMARY KEY (`id`)
                 );
-                
+
                 CREATE TABLE IF NOT EXISTS `usuario` (
                 `id` int(11) NOT NULL AUTO_INCREMENT,
                 `username` varchar(250) NOT NULL,
-                `password` varchar(250) NOT NULL,
+                `password` varchar(255) NOT NULL,
                 `rol` varchar(20) NOT NULL,
                 PRIMARY KEY (`id`)
                 );
-                
+
                 CREATE TABLE IF NOT EXISTS `album` (
                 `id_album` int(11) NOT NULL AUTO_INCREMENT,
                  `album` varchar(250) NOT NULL,
+                 `imagen` varchar(252) NOT NULL,
                  PRIMARY KEY (`id_album`)
-                 
                     );
+
+                ALTER TABLE `cancion` ADD FOREIGN KEY (`id_album`) REFERENCES `album` (`id_album`);
+                
+                
+                INSERT INTO `usuario` (id,username,password,rol) VALUES (1,'webadmin','$password_hashed','admin');
                     ";
 
         $this->conexion->query($sql);
